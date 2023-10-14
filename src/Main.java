@@ -4,10 +4,10 @@
 import javax.management.DynamicMBean;
 import java.util.Random;
 
-public class Main extends Animal {
+public class Main  {
     Random rand = new Random();
         private int[] dynamicArray;
-        private int size = 10;
+        public final int size = 10;
 
         // Конструктор для створення динамічного масиву заданого розміру
         public Main() {
@@ -47,8 +47,6 @@ public class Main extends Animal {
 
         public static void main(String[] args) {
         Main myArray = new Main();
-        Animal myAnimal = new Animal();
-        myAnimal.Hello();
         int result = myArray.calculate();
             System.out.println("Result of calculate method " + result);
             System.out.println("Array elements:");

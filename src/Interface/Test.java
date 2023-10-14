@@ -2,7 +2,7 @@ package Interface;
 
 public class Test {
     public static void main(String[] args) {
-        Animal animal1 = new Animal("Bobik", 3);
+        Animal animal1 = new Animal("Bobichka", 3);
         Human human1 = new Human("Pasha", 18);
         outPutInfo(human1);
         outPutInfo(animal1);
